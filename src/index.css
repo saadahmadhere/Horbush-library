@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Montserrat&display=swap");
+
+:root {
+  --wisdom-primary-bg: #181818;
+  --wisdom-secondary-bg: #202020;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--wisdom-primary-bg);
+  color: white;
+}
+
+.main {
+  min-height: calc(100vh - 5rem);
+}
