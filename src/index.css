@@ -8,9 +8,5 @@
 body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--wisdom-primary-bg);
-  color: white;
-}
-
-.main {
-  min-height: calc(100vh - 5rem);
+  color: #ffffff;
 }

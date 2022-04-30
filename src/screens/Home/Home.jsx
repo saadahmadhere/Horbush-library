@@ -1,12 +1,6 @@
 import "./Home.css";
-import { Sidebar } from "../../components";
 const Home = () => {
-  return (
-    <div className="main">
-      <Sidebar />
-      Home
-    </div>
-  );
+  return <main>Home</main>;
 };
 
 export { Home };
