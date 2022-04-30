@@ -1,12 +1,7 @@
 .navbar {
   padding-inline: var(--size-6);
   background-color: var(--wisdom-secondary-bg);
-  color: #f8f8f8;
-  height: 5rem;
-}
-
-.navbar .navbar_links {
-  display: block;
+  min-height: 5rem;
 }
 
 .logo_text {
@@ -16,14 +11,16 @@
   cursor: pointer;
 }
 
+.navbar_search .search_box {
+  border-radius: var(--size-4);
+}
+
+.navbar .navbar_links {
+  display: block;
+}
+
 @media only screen and (min-width: 769px) {
   .navbar {
     padding-inline: var(--size-16);
-  }
-  .navbar_links {
-    justify-content: space-around;
-  }
-  .navbar_links i {
-    cursor: pointer;
   }
 }

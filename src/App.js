@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Navbar, Footer } from "./components";
+import { Navbar, Footer, Sidebar } from "./components";
 import {
   Home,
   History,
