@@ -1,0 +1,23 @@
+.container_chip p {
+  color: rgb(122, 112, 112);
+  overflow-x: auto;
+}
+
+.container_chip .normal {
+  padding: var(--size-2) var(--size-3);
+}
+
+.chip {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  padding: var(--size-2) var(--size-2) var(--size-2) var(--size-3);
+  margin: var(--size-1);
+  background-color: var(--wisdom-chip-bg);
+  border-radius: var(--size-8);
+  font-weight: 500;
+}
+
+.chip:hover {
+  background-color: #c0c0c0;
+}
