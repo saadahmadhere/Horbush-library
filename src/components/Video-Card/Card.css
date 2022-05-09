@@ -1,0 +1,56 @@
+.video_upload_date {
+  margin-left: auto;
+}
+
+.video_details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.video_card_bottom {
+  color: #8a8a8a;
+  font-size: var(--size-3);
+}
+
+.card {
+  cursor: pointer;
+}
+
+.card_img img {
+  object-fit: cover;
+}
+
+.heading_card {
+  display: flex;
+  align-items: flex-start;
+  margin: var(--size-4) 0;
+}
+
+.heading_card > img {
+  height: var(--size-10);
+  width: var(--size-10);
+  margin: 0;
+}
+
+.heading_card button {
+  visibility: hidden;
+}
+
+.card:hover button {
+  visibility: visible;
+}
+
+/* Reset */
+
+.card .description {
+  display: block;
+}
+
+.card .action_icons button {
+  background-color: transparent;
+}
+
+.card .icon {
+  background-color: transparent;
+  color: #ffffff;
+}
