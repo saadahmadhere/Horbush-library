@@ -3,10 +3,15 @@
 :root {
   --wisdom-primary-bg: #181818;
   --wisdom-secondary-bg: #202020;
+  --wisdom-chip-bg: #373737;
 }
 
 body {
   font-family: "Montserrat", sans-serif;
   background-color: var(--wisdom-primary-bg);
   color: #ffffff;
+}
+
+.card {
+  box-shadow: none;
 }

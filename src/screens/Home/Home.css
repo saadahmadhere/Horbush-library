@@ -1,0 +1,23 @@
+.main_home {
+  margin: auto;
+  width: 90%;
+  margin-bottom: var(--size-15);
+}
+
+.home_card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container_chip {
+  margin: var(--size-2) auto;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+@media only screen and (min-width: 321px) {
+  .container_chip {
+    margin: var(--size-6) auto var(--size-6) var(--size-6);
+  }
+}
