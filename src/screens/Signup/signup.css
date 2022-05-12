@@ -15,12 +15,6 @@
   width: 100%;
 }
 
-.signUp a {
-  margin-top: var(--size-2);
-  align-self: center;
-  transition: 0.5s;
-}
-
 .signUp #check_box {
   cursor: pointer;
 }
