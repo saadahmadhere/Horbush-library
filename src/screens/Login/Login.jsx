@@ -27,11 +27,11 @@ const Login = () => {
             placeholder="Your password here..."
             required
           />
-          <a className="btn_icon btn_show__password">
+          <button className="btn_icon btn_show__password">
             <span className="material-icons outlined visibility ">
               visibility_off
             </span>
-          </a>
+          </button>
         </div>
         <div className="remember_me">
           <input type="checkbox" id="check_box" />
