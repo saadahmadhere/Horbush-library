@@ -1,0 +1,79 @@
+.login form {
+  width: 18.75rem;
+  border: 1px solid var(--wisdom-light);
+  border-radius: var(--size-1);
+  padding: var(--size-8);
+}
+
+.login input {
+  margin-bottom: var(--size-4);
+}
+
+.login .btn {
+  align-self: center;
+  width: 100%;
+}
+
+.login .forgot_pwd {
+  margin-top: var(--size-2);
+  align-self: center;
+  transition: 0.5s;
+  color: var(--wisdom-red);
+}
+
+.login .forgot_pwd:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.login .login_pwd {
+  position: relative;
+}
+
+.login_pwd .visibility {
+  position: absolute;
+  right: 3%;
+  top: 35%;
+}
+
+.login .hr {
+  border: none;
+  border-top: 2px solid var(--gray-700);
+}
+
+.login .btn_icon {
+  cursor: pointer;
+}
+
+.btn_login {
+  background-color: var(--wisdom-red);
+}
+
+.btn_test_login {
+  border: 1px solid var(--wisdom-light);
+  color: var(--wisdom-light);
+}
+
+.remember_me input {
+  cursor: pointer;
+}
+
+.btn_create__acc {
+  border: 1px solid var(--wisdom-red);
+  color: var(--wisdom-red);
+}
+
+.btn_show__password {
+  color: var(--gray-500);
+  border: 0;
+}
+
+.btn_show__password:hover {
+  color: var(--wisdom-red);
+}
+
+@media only screen and (min-width: 48rem) {
+  .login form {
+    width: 25%;
+  }
+}

@@ -23,9 +23,9 @@ const Navbar = () => {
 
         <ul className="navbar_links flex list_style_none">
           <li>
-            <button className="btn">
+            <Link to="/login" className="btn">
               <i className="fas fa-user-circle fa-2x"></i>
-            </button>
+            </Link>
           </li>
         </ul>
       </nav>
