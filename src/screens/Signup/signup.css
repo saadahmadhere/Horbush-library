@@ -1,0 +1,42 @@
+.signUp form {
+  width: 18.75rem;
+  margin: var(--size-8) auto;
+  border-radius: var(--size-1);
+  padding: var(--size-8);
+  border: 1px solid var(--wisdom-light);
+}
+
+.signUp input {
+  margin-bottom: var(--size-4);
+}
+
+.signUp .btn {
+  align-self: center;
+  width: 100%;
+}
+
+.signUp a {
+  margin-top: var(--size-2);
+  align-self: center;
+  transition: 0.5s;
+}
+
+.signUp #check_box {
+  cursor: pointer;
+}
+
+.btn_signup {
+  background-color: var(--wisdom-red);
+}
+
+.signUp a:hover {
+  color: var(--wisdom-red);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 48rem) {
+  .signUp form {
+    width: 25%;
+  }
+}
