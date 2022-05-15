@@ -1,41 +1,69 @@
 import "./Card.css";
+import { useState } from "react";
+import { formatViewsCount, useClickOutside } from "../../Helper";
 
-const Card = () => {
-  const videoTitle =
-    "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta porro velit deleniti et aliquid minus hic culpa molestias ut aut    tempora officiis asperiores esse, architecto eligendi, blanditiis,    ipsum voluptatem! Quaerat!";
+const Card = ({ video }) => {
+  const [showMoreCardOptions, setShowMoreCardOptions] = useState(false);
+  const domNode = useClickOutside(() => setShowMoreCardOptions(false));
+
   return (
     <div className="card">
       <div className="container_top">
         <div className="card_img">
           <img
-            src="https://i.ytimg.com/vi/ycI0VQbtd2U/hq720.jpg?sqp=-…AFwAcABBg==&rs=AOn4CLCGawAFA-xB2MGxmPrnBZcJFvijgw"
-            alt="video name goes here"
+            src={video.thumbnail}
+            alt="Video Title"
             className="img_responsive"
           />
         </div>
         <div className="heading_card">
           <img
             className="avatar avatar_circle"
-            src="https://yt3.ggpht.com/gdzGJfQ7DZPNgCJHdGTetR9wI6Bdc7XhZVuz2VfM0dOb311b0nvGrgMuOoLnI5wtRJQrYeRvCQ=s88-c-k-c0x00ffffff-no-rj"
-            alt="girl"
+            src={video.creatorProfile}
+            alt="Avatar"
           />
           <div className="video_details flex_col ml_2">
             <p className="txt_semibold">
-              {videoTitle.length > 40
-                ? videoTitle.slice(0, 42) + "..."
-                : videoTitle}
+              {video.title.length > 40
+                ? video.title.slice(0, 42) + "..."
+                : video.title}
             </p>
             <div className="video_card_bottom mt_3">
-              <p className="block">Name of creator</p>
+              <p className="block">
+                {video.creator.length > 30
+                  ? video.creator.slice(0, 30) + "..."
+                  : video.creator}
+              </p>
               <div className="video_details mt_1">
-                <span className="video_views">999 views</span>
-                <span className="video_upload_date">11 months ago</span>
+                <span className="video_views">{`${formatViewsCount(
+                  video.views
+                )} views`}</span>
+                <span className="video_upload_date">
+                  {new Date(video.uploaded).toDateString().slice(4)}
+                </span>
               </div>
             </div>
           </div>
-          <button className="btn">
-            <span className="material-icons icon">more_vert</span>
-          </button>
+          <div ref={domNode} className="vertical_button">
+            <button
+              className="btn"
+              onClick={() => setShowMoreCardOptions((prev) => !prev)}>
+              <span className="material-icons icon">more_vert</span>
+            </button>
+            {showMoreCardOptions && (
+              <div className="more_card_options">
+                <ul className="list_style_none">
+                  <li className="txt_sm">
+                    <i className="fas fa-plus mx_1"></i>
+                    Add to watchLater
+                  </li>
+                  <li className="txt_sm">
+                    <i className="fas fa-plus mx_1"></i>Add to playlist
+                  </li>
+                </ul>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>
