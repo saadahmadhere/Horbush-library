@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-import { Navbar, Footer, Sidebar } from "./components";
+import { Navbar, Footer } from "./components";
 import {
   Home,
   History,
@@ -9,6 +9,7 @@ import {
   Signup,
   WatchLater,
   Error,
+  SingleVideoPage,
 } from "./screens";
 
 const App = () => {
@@ -17,6 +18,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/explore/:id" element={<SingleVideoPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/history" element={<History />} />
         <Route path="/liked" element={<Liked />} />
