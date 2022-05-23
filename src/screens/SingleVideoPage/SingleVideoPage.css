@@ -4,6 +4,13 @@
   gap: var(--size-1);
 }
 
+.video_notes input,
+.video_notes textarea {
+  background-color: var(--wisdom-secondary-bg);
+  color: var(--wisdom-light);
+  border: 0;
+}
+
 .video_actions {
   gap: var(--size-1);
 }

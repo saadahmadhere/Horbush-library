@@ -43,7 +43,7 @@ const SingleVideoPage = () => {
       <section className="video_notes px_3 py_3">
         <form className="flex_col ">
           <h2 className="h2 mb_2">Notes</h2>
-          <input type="text" placeholder="Title" className="mb_2 px_2 py_1" />
+          <input type="text" placeholder="Title" className="mb_2 px_3 py_2" />
           <textarea
             placeholder="Description"
             cols="30"
