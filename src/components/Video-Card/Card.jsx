@@ -1,15 +1,19 @@
 import "./Card.css";
 import { useState } from "react";
 import { formatViewsCount, useClickOutside } from "../../Helper";
+import { useNavigate } from "react-router-dom";
 
 const Card = ({ video }) => {
+  const navigate = useNavigate();
   const [showMoreCardOptions, setShowMoreCardOptions] = useState(false);
   const domNode = useClickOutside(() => setShowMoreCardOptions(false));
 
   return (
     <div className="card">
       <div className="container_top">
-        <div className="card_img">
+        <div
+          className="card_img"
+          onClick={() => navigate(`/explore/${video._id}`)}>
           <img
             src={video.thumbnail}
             alt="Video Title"

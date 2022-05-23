@@ -1,0 +1,23 @@
+.note {
+  background-color: var(--wisdom-secondary-bg);
+  border: var(--size-1);
+  height: 100px;
+  color: var(--wisdom-light);
+  padding: var(--size-2) var(--size-4);
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.note_actions {
+  display: flex;
+  justify-content: flex-end;
+  justify-self: flex-end;
+}
+
+.note_actions button {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  color: var(--wisdom-light);
+}

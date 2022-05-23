@@ -1,0 +1,58 @@
+.single_video_display {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--size-1);
+}
+
+.video_notes input,
+.video_notes textarea {
+  background-color: var(--wisdom-secondary-bg);
+  color: var(--wisdom-light);
+  border: 0;
+}
+
+.video_actions {
+  gap: var(--size-1);
+}
+
+.video_actions .btn {
+  border: 1px solid var(--wisdom-light);
+  padding: var(--size-2) var(--size-3);
+  width: 100%;
+}
+
+.video_actions .btn.active {
+  background-color: var(--wisdom-light);
+  color: var(--wisdom-primary-bg);
+  border: none;
+}
+
+.video_creator img {
+  height: 3rem;
+  width: 3rem;
+}
+
+.form_buttons {
+  justify-content: start;
+}
+
+.btn_save_note {
+  background-color: var(--wisdom-red);
+}
+
+.btn_discard_note {
+  background-color: transparent;
+  border: 1px solid var(--wisdom-light);
+  border-radius: var(--size-1);
+}
+
+.notes {
+  max-height: 300px;
+  overflow: auto;
+}
+
+@media only screen and (max-width: 769px) {
+  .single_video_display {
+    grid-template-columns: 1fr;
+  }
+}
