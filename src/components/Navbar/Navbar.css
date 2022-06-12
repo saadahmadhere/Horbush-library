@@ -24,3 +24,9 @@
     padding-inline: var(--size-16);
   }
 }
+
+@media only screen and (max-width: 321px) {
+  .logo_text {
+    font-size: var(--size-7);
+  }
+}
